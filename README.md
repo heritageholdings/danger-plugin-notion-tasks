@@ -18,14 +18,11 @@ At a glance:
 
 ```js
 // dangerfile.js
-import notionTasks from 'danger-plugin-notion-tasks'
+import notionTasks from "danger-plugin-notion-tasks";
 
-notionTasks()
+notionTasks();
 ```
+
 ## Changelog
 
 See the GitHub [release history](https://github.com/dgopsq/danger-plugin-notion-tasks/releases).
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
