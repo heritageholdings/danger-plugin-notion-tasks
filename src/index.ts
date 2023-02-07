@@ -3,7 +3,7 @@ import { DangerDSLType } from "../node_modules/danger/distribution/dsl/DangerDSL
 import * as __dm from "danger";
 import { Client } from "@notionhq/client";
 
-declare var danger: DangerDSLType;
+declare const danger: DangerDSLType;
 export declare function message(message: string): void;
 export declare function warn(message: string): void;
 export declare function fail(message: string): void;
@@ -58,7 +58,7 @@ export const defaultTriggerWords = [
   "fixed",
   "resolve",
   "resolves",
-  "resolved"
+  "resolved",
 ];
 
 /**
@@ -122,8 +122,8 @@ const updateNotionTask = (
     page_id: taskId,
     properties: {
       Status: { status: { name: taskStatus } },
-      "Pull Request": { url: pr.url }
-    }
+      "Pull Request": { url: pr.url },
+    },
   });
 };
 
@@ -147,7 +147,7 @@ const notionTasks = async (config: NotionSyncConfig) => {
 
   // Initialize the Notion client.
   const notion = new Client({
-    auth: notionToken
+    auth: notionToken,
   });
 
   // Retrieve all the Notion urls in the PR body.
@@ -175,14 +175,14 @@ const notionTasks = async (config: NotionSyncConfig) => {
   // Execute the update returning the computed
   // tasks as a list of urls.
   const computedTasks: Array<NotionTaskInfo | null> = await Promise.all(
-    tasksIds.map(taskId =>
+    tasksIds.map((taskId) =>
       // This promise won't reject, printing
       // a possible error to STDOUT.
       updateNotionTask(notion, taskId, prStatusMap, {
         status: prStatus,
-        url: prUrl
+        url: prUrl,
       })
-        .then(res => {
+        .then((res) => {
           console.log("Task updated successfully", JSON.stringify(res));
 
           if ("properties" in res) {
@@ -199,13 +199,13 @@ const notionTasks = async (config: NotionSyncConfig) => {
           } else if (tasksIdsMap[taskId]) {
             return {
               title: tasksIdsMap[taskId],
-              url: tasksIdsMap[taskId]
+              url: tasksIdsMap[taskId],
             };
           } else {
             return null;
           }
         })
-        .catch(err => {
+        .catch((err) => {
           console.error(err);
           return null;
         })
