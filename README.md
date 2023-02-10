@@ -53,9 +53,7 @@ notionSync({
 });
 ```
 
-3. In your GitHub repo add a new [GitHub Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets) `NOTION_TOKEN` with the token generated in the previous section from Notion.
-
-4. Make the Danger bot run everytime a Pull Request changes:
+3. Make the Danger bot run everytime a Pull Request changes:
 
 ```yml
 on:
@@ -67,6 +65,9 @@ on:
       - edited
       - closed
 ```
+
+4. In your GitHub repo add a new [GitHub Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets) `NOTION_TOKEN` with the token generated in the previous section from Notion.
+
 
 ### Trigger
 
