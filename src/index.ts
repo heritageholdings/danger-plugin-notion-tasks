@@ -1,9 +1,8 @@
 // Provides dev-time type structures for  `danger` - doesn't affect runtime.
-import { DangerDSLType } from "../node_modules/danger/distribution/dsl/DangerDSL";
 import * as __dm from "danger";
 import { Client } from "@notionhq/client";
 
-declare const danger: DangerDSLType;
+declare const danger: __dm.DangerDSLType;
 export declare function message(message: string): void;
 export declare function warn(message: string): void;
 export declare function fail(message: string): void;
