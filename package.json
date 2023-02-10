@@ -26,7 +26,8 @@
     "prettier": "prettier",
     "prettier-write": "npm run prettier -- --parser typescript --no-semi --trailing-comma es5 --write --print-width 120",
     "prettier-project": "npm run prettier-write -- 'src/**/*.{ts,tsx}'",
-    "lint": "eslint \"src/**/*.ts\""
+    "lint": "eslint \"src/**/*.ts\"",
+    "postinstall": "npm run build"
   },
   "license": "MIT",
   "engines": {
