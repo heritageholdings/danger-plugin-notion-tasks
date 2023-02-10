@@ -15,8 +15,9 @@ Now create a Notion page with a `Status` [status property](https://www.notion.so
 <img
   src="assets/notion-properties.png"
   alt="Notion page required properties"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 400px"/>
+  title="Notion page required properties"
+  height="100px"
+/>
 
 ### Configuration
 
