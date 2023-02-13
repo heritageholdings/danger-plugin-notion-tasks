@@ -2,6 +2,7 @@
   "name": "@heritageholdings/danger-plugin-notion-tasks",
   "description": "Manage your Notion's pages inside GitHub",
   "author": "Diego Pasquali",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/heritageholdings/danger-plugin-notion-tasks.git"
