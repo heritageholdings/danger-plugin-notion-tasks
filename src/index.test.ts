@@ -14,13 +14,13 @@ describe("notionSync", () => {
       [`this PR resolves ${notionTaskUrl1}`, [`resolves ${notionTaskUrl1}`]],
       [
         `this PR resolves        ${notionTaskUrl1}`,
-        [`resolves        ${notionTaskUrl1}`]
+        [`resolves        ${notionTaskUrl1}`],
       ],
       [`this PR ResoLves ${notionTaskUrl1}`, [`ResoLves ${notionTaskUrl1}`]],
       [
         `this PR fixes ${notionTaskUrl1}\n and closes ${notionTaskUrl2}`,
-        [`fixes ${notionTaskUrl1}`, `closes ${notionTaskUrl2}`]
-      ]
+        [`fixes ${notionTaskUrl1}`, `closes ${notionTaskUrl2}`],
+      ],
     ])("%p -> %p", (input, expected) => {
       const output = parseNotionLinks(notionUser, defaultTriggerWords, input);
       expect(output).toMatchObject(expected);
@@ -31,7 +31,7 @@ describe("notionSync", () => {
     test.each([
       ["", null],
       [notionTaskUrl1, notionTaskId1],
-      [notionTaskUrl2, notionTaskId2]
+      [notionTaskUrl2, notionTaskId2],
     ])("%p -> %p", (input, expected) => {
       const output = parseTaskIdFromUrl(input);
       expect(output).toBe(expected);
