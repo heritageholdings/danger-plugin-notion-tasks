@@ -25,7 +25,8 @@
     "prepublish": "npm run lint && npm run test && npm run build",
     "prettier": "prettier",
     "prettier-project": "npm run prettier -- 'src/**/*.{ts,tsx}' --write",
-    "lint": "eslint \"src/**/*.ts\""
+    "lint": "eslint \"src/**/*.ts\"",
+    "publish-auto": "scripts/publish.sh"
   },
   "license": "MIT",
   "engines": {
