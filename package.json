@@ -1,5 +1,5 @@
 {
-  "name": "danger-plugin-notion-tasks",
+  "name": "@heritageholdings/danger-plugin-notion-tasks",
   "description": "Manage your Notion's pages inside GitHub",
   "author": "Diego Pasquali",
   "repository": {
