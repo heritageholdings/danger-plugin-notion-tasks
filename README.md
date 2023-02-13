@@ -1,6 +1,6 @@
 # danger-plugin-notion-tasks
 
-[![npm version](https://badge.fury.io/js/danger-plugin-notion-tasks.svg)](https://badge.fury.io/js/danger-plugin-notion-tasks)
+[![npm version](https://badge.fury.io/js/@heritageholdings/danger-plugin-notion-tasks.svg)](https://badge.fury.io/js/@heritageholdings/danger-plugin-notion-tasks)
 
 This [Danger](https://danger.systems/js/) plugin manages Notion pages automatically based on a Pull Request status.
 
@@ -25,10 +25,10 @@ Now create a Notion page with a `Status` [status property](https://www.notion.so
 
 ```sh
 // Yarn
-yarn add --dev danger-plugin-notion-tasks
+yarn add --dev @heritageholdings/danger-plugin-notion-tasks
 
 // NPM
-npm install -D danger-plugin-notion-tasks
+npm install -D @heritageholdings/danger-plugin-notion-tasks
 ```
 
 2. Add the following code to your `dangerfile`:
@@ -67,7 +67,6 @@ on:
 ```
 
 4. In your GitHub repo add a new [GitHub Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets) `NOTION_TOKEN` with the token generated in the previous section from Notion.
-
 
 ### Trigger
 
