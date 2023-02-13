@@ -1,6 +1,6 @@
 # danger-plugin-notion-tasks
 
-[![npm version](https://badge.fury.io/js/@heritageholdings/danger-plugin-notion-tasks.svg)](https://badge.fury.io/js/@heritageholdings/danger-plugin-notion-tasks)
+[![npm version](https://badge.fury.io/js/@heritageholdings%2Fdanger-plugin-notion-tasks.svg)](https://badge.fury.io/js/@heritageholdings%2Fdanger-plugin-notion-tasks)
 
 This [Danger](https://danger.systems/js/) plugin manages Notion pages automatically based on a Pull Request status.
 
