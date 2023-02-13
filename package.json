@@ -1,15 +1,15 @@
 {
   "name": "danger-plugin-notion-tasks",
-  "description": "Manage your Notion's tasks inside GitHub",
+  "description": "Manage your Notion's pages inside GitHub",
   "author": "Diego Pasquali",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dgopsq/danger-plugin-notion-tasks.git"
+    "url": "https://github.com/heritageholdings/danger-plugin-notion-tasks.git"
   },
   "bugs": {
-    "url": "https://github.com/dgopsq/danger-plugin-notion-tasks/issues"
+    "url": "https://github.com/heritageholdings/danger-plugin-notion-tasks/issues"
   },
-  "homepage": "https://github.com/dgopsq/danger-plugin-notion-tasks#readme",
+  "homepage": "https://github.com/heritageholdings/danger-plugin-notion-tasks",
   "keywords": [
     "danger",
     "danger-plugin",
@@ -21,7 +21,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "prepublish": "npm run build",
+    "prepublish": "npm run lint && npm run test && npm run build",
     "prettier": "prettier",
     "prettier-project": "npm run prettier -- 'src/**/*.{ts,tsx}' --write",
     "lint": "eslint \"src/**/*.ts\"",
