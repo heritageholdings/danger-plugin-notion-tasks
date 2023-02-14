@@ -78,7 +78,7 @@ Closes https://www.notion.so/this-is-the-username/Your-Notion-Page-1069eef615114
 
 This Notion page will be recognized by the Danger bot and managed based on the PR status. For example, opening the PR will change the page Status to `In progress` and merging it to `Done` following the default configuration above. The PR link will be also added to the `Pull Request` property.
 
-In this case `closes` (not case sensitive) in one of the default keywords used by this plugin to recognize a target Notion page. By default all the [GitHub keywords](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests) are supported, but it's possible to change them through the `triggerWords` setting.
+In this case `closes` (not case sensitive) is one of the default keywords used by this plugin to recognize a target Notion page. By default all the [GitHub keywords](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests) are supported, but it's possible to change them through the `triggerWords` setting.
 
 ## Changelog
 
