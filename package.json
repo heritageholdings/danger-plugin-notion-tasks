@@ -22,7 +22,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "prepublish": "npm run lint && npm run test && npm run build",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
     "prettier": "prettier",
     "prettier-project": "npm run prettier -- 'src/**/*.{ts,tsx}' --write",
     "lint": "eslint \"src/**/*.ts\"",
